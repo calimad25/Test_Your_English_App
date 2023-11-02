@@ -23,4 +23,13 @@ card_title = canvas.create_text(400, 150, text="English", font=("Ariel", 40, "it
 cand_word = canvas.create_text(400, 263, text="Test", font=("Ariel", 60, "italic"))
 canvas.grid(row=0, column=0, columnspan=2)
 
+# Buttons
+wrong_image = PhotoImage(file="images/wrong.png")
+unknown_button = Button(image=wrong_image, highlightthickness=0)
+unknown_button.grid(row=1, column=0)
+
+check_image = PhotoImage(file="images/right.png")
+know_button = Button(image=check_image, highlightthickness=0)
+know_button.grid(row=1, column=1)
+
 window.mainloop()
