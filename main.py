@@ -25,7 +25,7 @@ TO_LEARN = {}
 words_to_learn = pandas.DataFrame()
 
 try:  # When the program is run for the first time.
-    data = pandas.read_csv("data/English_Words_1.csv")
+    data = pandas.read_csv("data/words_to_learn.csv")
 except FileNotFoundError:
     original_data = pandas.read_csv("data/English_Words_1.csv")
     TO_LEARN = original_data.to_dict(orient="records")  # "records" is to have an item-value pair for each word.
